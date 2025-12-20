@@ -1,5 +1,8 @@
 "use client"
 
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+
 export default function Projects() {
   const projects = [
     {
@@ -8,18 +11,21 @@ export default function Projects() {
         "Installed complete walk-in cooler and freezer systems for 5 locations, including emergency backup systems.",
       image: "/modern-commercial-restaurant-walk-in-cooler-instal.jpg",
       category: "Commercial",
+      slug: "restaurant-chain-refrigeration",
     },
     {
       title: "Warehouse Cold Storage",
       description: "Designed and implemented a 10,000 sq ft cold storage facility with temperature monitoring systems.",
       image: "/large-industrial-warehouse-cold-storage-facility.jpg",
       category: "Industrial",
+      slug: "warehouse-cold-storage",
     },
     {
       title: "Grocery Store HVAC",
       description: "Complete HVAC overhaul including display refrigeration units and store climate control systems.",
       image: "/modern-grocery-store-refrigeration-display-cases.jpg",
       category: "Retail",
+      slug: "grocery-store-hvac",
     },
   ]
 
@@ -38,9 +44,10 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div
+            <Link
               key={index}
-              className="group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-2xl transition-all duration-300"
+              href={`/projects/${project.slug}`}
+              className="group relative bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] cursor-pointer"
             >
               <div className="aspect-[4/3] relative overflow-hidden bg-muted">
                 <img
@@ -58,9 +65,18 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed text-base">{project.description}</p>
+                <div className="pt-4">
+                  <span className="text-sm font-medium text-primary group-hover:underline">View Details →</span>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
+        </div>
+
+        <div className="text-center mt-16">
+          <Button size="lg" variant="outline" className="rounded-full bg-transparent" asChild>
+            <Link href="/projects">View All Projects</Link>
+          </Button>
         </div>
       </div>
     </section>

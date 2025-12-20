@@ -1,4 +1,14 @@
+import Link from "next/link"
+
 export default function Footer() {
+  const footerLinks = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/#about" },
+    { name: "Services", href: "/services" },
+    { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/#contact" },
+  ]
+
   return (
     <footer className="bg-primary py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,14 +23,14 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-primary-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {["Home", "About", "Services", "Projects", "Contact"].map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
+              {footerLinks.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
-                    {link}
-                  </a>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -29,8 +39,16 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-primary-foreground mb-4">Contact</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>Phone: (760) 789-3639</li>
-              <li>Email: korilee760@gmail.com</li>
+              <li>
+                <a href="tel:+17607893639" className="hover:text-primary-foreground transition-colors">
+                  Phone: (760) 789-3639
+                </a>
+              </li>
+              <li>
+                <a href="mailto:korilee760@gmail.com" className="hover:text-primary-foreground transition-colors">
+                  Email: korilee760@gmail.com
+                </a>
+              </li>
               <li>24/7 Emergency Service</li>
             </ul>
           </div>

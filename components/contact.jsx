@@ -63,14 +63,14 @@ export default function Contact() {
           <div className="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary mb-4">
             Let's Talk
           </div>
-          <h2 className="text-5xl sm:text-6xl font-bold text-foreground mb-6 text-balance">Get in Touch</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance leading-relaxed">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6 text-balance">Get in Touch</h2>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto text-balance leading-relaxed">
             Ready to discuss your refrigeration needs? Contact us today for a free consultation.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-card p-10 rounded-2xl border border-border shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="bg-card p-6 sm:p-10 rounded-2xl border border-border shadow-xl">
             <h3 className="text-2xl font-bold text-card-foreground mb-2">Send us a Message</h3>
             <p className="text-muted-foreground mb-8">Fill out the form and we'll get back to you shortly</p>
 
@@ -145,7 +145,7 @@ export default function Contact() {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-card p-10 rounded-2xl border border-border shadow-xl">
+            <div className="bg-card p-6 sm:p-10 rounded-2xl border border-border shadow-xl">
               <h3 className="text-2xl font-bold text-card-foreground mb-2">Contact Information</h3>
               <p className="text-muted-foreground mb-8">Reach out to Kori Lee and the KORI team</p>
 
@@ -181,9 +181,9 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-10 rounded-2xl border border-primary/20">
-              <h3 className="text-2xl font-bold text-foreground mb-4">About the Owner</h3>
-              <p className="text-foreground/80 leading-relaxed text-lg">
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 sm:p-10 rounded-2xl border border-primary/20">
+              <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">About the Owner</h3>
+              <p className="text-foreground/80 leading-relaxed text-base sm:text-lg">
                 Kori Lee brings years of expertise in commercial refrigeration and HVAC systems. Committed to providing
                 top-quality service and building lasting relationships with clients across Southern California.
               </p>
