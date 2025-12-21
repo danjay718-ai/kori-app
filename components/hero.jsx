@@ -4,6 +4,19 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Phone, Snowflake } from "lucide-react"
 
 export default function Hero() {
+  const scrollToContact = (e) => {
+    e.preventDefault()
+    const contactSection = document.getElementById("contact")
+    if (contactSection) {
+      const navbarHeight = 80 // Account for fixed navbar
+      const targetPosition = contactSection.offsetTop - navbarHeight
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      })
+    }
+  }
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 gradient-mesh opacity-30"></div>
@@ -32,12 +45,10 @@ export default function Hero() {
             <Button
               size="lg"
               className="w-full sm:w-auto text-base px-8 sm:px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
-              asChild
+              onClick={scrollToContact}
             >
-              <a href="#contact">
-                Get a Free Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              Get a Free Quote
+              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
               size="lg"
@@ -45,7 +56,7 @@ export default function Hero() {
               className="w-full sm:w-auto text-base px-8 sm:px-10 py-6 rounded-full border-2 hover:bg-primary/5 transition-all duration-300 bg-transparent"
               asChild
             >
-              <a href="tel:+17607893639">
+              <a href="#">
                 <Phone className="mr-2 h-5 w-5" />
                 (760) 789-3639
               </a>

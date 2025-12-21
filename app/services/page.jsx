@@ -1,6 +1,6 @@
 "use client"
 
-import { Snowflake, Thermometer, Wind, DoorOpen, Droplets, Container, ArrowRight } from "lucide-react"
+import { Snowflake, Package, Wind, Wrench, Settings, Warehouse, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -10,45 +10,45 @@ export default function ServicesPage() {
   const services = [
     {
       icon: Snowflake,
-      title: "Cold Storage",
-      description: "Custom cold storage solutions for warehouses, distribution centers, and food service facilities.",
-      slug: "cold-storage",
-      features: ["Temperature-controlled warehousing", "Custom design & installation", "24/7 monitoring systems"],
+      title: "Walk-In Cold Storage Design & Installation",
+      description: "Custom walk-in cold storage solutions designed and installed for your specific business needs.",
+      slug: "walk-in-cold-storage",
+      features: ["Custom design consultation", "Professional installation", "Temperature monitoring systems"],
     },
     {
-      icon: Thermometer,
-      title: "Refrigeration Systems",
-      description: "Installation, maintenance, and repair of commercial refrigeration systems of all sizes.",
-      slug: "refrigeration-systems",
-      features: ["New system installation", "Preventive maintenance", "Emergency repairs"],
+      icon: Package,
+      title: "Refrigeration Systems Installation",
+      description: "Professional installation of commercial refrigeration systems for optimal cooling performance.",
+      slug: "refrigeration-systems-installation",
+      features: ["Commercial system setup", "Energy-efficient solutions", "Quality assurance testing"],
     },
     {
       icon: Wind,
-      title: "Air Conditioning",
-      description: "Commercial HVAC services including installation, maintenance, and emergency repairs.",
-      slug: "air-conditioning",
-      features: ["Commercial HVAC installation", "System upgrades", "Energy efficiency optimization"],
+      title: "Airconditioning Systems Services",
+      description: "Complete air conditioning services including installation, maintenance, and repairs.",
+      slug: "airconditioning-systems-services",
+      features: ["HVAC installation", "System maintenance", "Emergency repairs"],
     },
     {
-      icon: DoorOpen,
-      title: "Walk-in Coolers",
-      description: "Professional installation and service for walk-in coolers and freezers.",
-      slug: "walk-in-coolers",
-      features: ["Custom walk-in design", "Freezer installation", "Repair & maintenance"],
+      icon: Wrench,
+      title: "Maintenance, Repair & Troubleshooting",
+      description: "Expert maintenance, repair, and troubleshooting services to keep your systems running smoothly.",
+      slug: "maintenance-repair-troubleshooting",
+      features: ["Preventive maintenance", "24/7 emergency repairs", "System diagnostics"],
     },
     {
-      icon: Droplets,
-      title: "Ice Machines",
-      description: "Complete ice machine services from installation to regular maintenance and repairs.",
-      slug: "ice-machines",
-      features: ["Commercial ice maker setup", "Regular maintenance", "Part replacement"],
+      icon: Settings,
+      title: "Parts & Components Supply",
+      description: "High-quality parts and components supply for all your refrigeration and cooling needs.",
+      slug: "parts-components-supply",
+      features: ["Genuine OEM parts", "Fast delivery", "Competitive pricing"],
     },
     {
-      icon: Container,
-      title: "Display Refrigerators",
-      description: "Service for reach-in refrigerators, display cases, and merchandising units.",
-      slug: "display-refrigerators",
-      features: ["Display case installation", "Reach-in refrigerators", "Merchandising units"],
+      icon: Warehouse,
+      title: "Site Preparation & Insulated Panel Assembly",
+      description: "Professional site preparation and insulated panel assembly for optimal installation.",
+      slug: "site-preparation-panel-assembly",
+      features: ["Site assessment", "Panel installation", "Quality insulation"],
     },
   ]
 

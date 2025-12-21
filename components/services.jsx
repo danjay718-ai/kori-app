@@ -1,6 +1,6 @@
 "use client"
 
-import { Snowflake, Thermometer, Wind, DoorOpen, Droplets, Container } from "lucide-react"
+import { Snowflake, Package, Wind, Wrench, Settings, Warehouse } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -8,39 +8,39 @@ export default function Services() {
   const services = [
     {
       icon: Snowflake,
-      title: "Cold Storage",
-      description: "Custom cold storage solutions for warehouses, distribution centers, and food service facilities.",
-      slug: "cold-storage",
+      title: "Walk-In Cold Storage Design & Installation",
+      description: "Custom walk-in cold storage solutions designed and installed for your specific business needs.",
+      slug: "walk-in-cold-storage",
     },
     {
-      icon: Thermometer,
-      title: "Refrigeration Systems",
-      description: "Installation, maintenance, and repair of commercial refrigeration systems of all sizes.",
-      slug: "refrigeration-systems",
+      icon: Package,
+      title: "Refrigeration Systems Installation",
+      description: "Professional installation of commercial refrigeration systems for optimal cooling performance.",
+      slug: "refrigeration-systems-installation",
     },
     {
       icon: Wind,
-      title: "Air Conditioning",
-      description: "Commercial HVAC services including installation, maintenance, and emergency repairs.",
-      slug: "air-conditioning",
+      title: "Airconditioning Systems Services",
+      description: "Complete air conditioning services including installation, maintenance, and repairs.",
+      slug: "airconditioning-systems-services",
     },
     {
-      icon: DoorOpen,
-      title: "Walk-in Coolers",
-      description: "Professional installation and service for walk-in coolers and freezers.",
-      slug: "walk-in-coolers",
+      icon: Wrench,
+      title: "Maintenance, Repair & Troubleshooting",
+      description: "Expert maintenance, repair, and troubleshooting services to keep your systems running smoothly.",
+      slug: "maintenance-repair-troubleshooting",
     },
     {
-      icon: Droplets,
-      title: "Ice Machines",
-      description: "Complete ice machine services from installation to regular maintenance and repairs.",
-      slug: "ice-machines",
+      icon: Settings,
+      title: "Parts & Components Supply",
+      description: "High-quality parts and components supply for all your refrigeration and cooling needs.",
+      slug: "parts-components-supply",
     },
     {
-      icon: Container,
-      title: "Display Refrigerators",
-      description: "Service for reach-in refrigerators, display cases, and merchandising units.",
-      slug: "display-refrigerators",
+      icon: Warehouse,
+      title: "Site Preparation & Insulated Panel Assembly",
+      description: "Professional site preparation and insulated panel assembly for optimal installation.",
+      slug: "site-preparation-panel-assembly",
     },
   ]
 

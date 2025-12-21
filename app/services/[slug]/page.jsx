@@ -1,6 +1,6 @@
 "use client"
 
-import { Snowflake, Thermometer, Wind, DoorOpen, Droplets, Container, Check, ArrowLeft } from "lucide-react"
+import { Snowflake, Package, Wind, Wrench, Settings, Warehouse, Check, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -8,133 +8,185 @@ import { Button } from "@/components/ui/button"
 import { notFound } from "next/navigation"
 
 const servicesData = {
-  "cold-storage": {
+  "walk-in-cold-storage": {
     icon: Snowflake,
-    title: "Cold Storage",
+    title: "Walk-In Cold Storage Design & Installation",
     description:
-      "Custom cold storage solutions designed for warehouses, distribution centers, and food service facilities. Our expert team designs and installs temperature-controlled storage systems that maintain precise conditions for your products.",
+      "Custom walk-in cold storage solutions designed and installed for warehouses, distribution centers, restaurants, and food service facilities. Our expert team creates temperature-controlled storage systems that maintain precise conditions for your products.",
     overview:
-      "Whether you need a small walk-in cooler or a large warehouse-scale cold storage facility, KORI provides end-to-end solutions tailored to your business requirements. We specialize in creating efficient, reliable systems that meet all food safety regulations.",
+      "KORI specializes in designing and installing walk-in cold storage solutions tailored to your business requirements. Whether you need a compact walk-in cooler for a restaurant or a large-scale cold storage facility for a distribution center, we provide end-to-end solutions from initial design consultation to final installation and testing.",
     scope: [
-      "Temperature-controlled warehouse design",
-      "Custom cold storage installation",
-      "24/7 monitoring systems",
+      "Custom cold storage design consultation",
+      "Temperature-controlled storage installation",
+      "Walk-in cooler and freezer systems",
       "Energy-efficient cooling solutions",
       "Compliance with food safety standards",
+      "Temperature monitoring systems",
       "Emergency backup systems",
+      "Post-installation support",
     ],
-    products: ["Walk-in coolers", "Freezer systems", "Temperature monitoring equipment", "Backup generators"],
+    products: [
+      "Walk-in coolers",
+      "Walk-in freezers",
+      "Temperature monitoring equipment",
+      "Insulated panels",
+      "Refrigeration units",
+    ],
     images: [
       "/large-industrial-warehouse-cold-storage-facility.jpg",
+      "/modern-commercial-restaurant-walk-in-cooler-instal.jpg",
       "/commercial-cold-storage-interior.jpg",
-      "/temperature-control-system.jpg",
     ],
   },
-  "refrigeration-systems": {
-    icon: Thermometer,
-    title: "Refrigeration Systems",
+  "refrigeration-systems-installation": {
+    icon: Package,
+    title: "Refrigeration Systems Installation",
     description:
-      "Professional installation, maintenance, and repair of commercial refrigeration systems of all sizes. From small businesses to large industrial facilities, we handle everything.",
+      "Professional installation of commercial refrigeration systems for businesses of all sizes. From small retail stores to large industrial facilities, we ensure optimal cooling performance.",
     overview:
-      "Our refrigeration services cover the complete lifecycle of your cooling systems. We install new equipment, provide preventive maintenance to avoid breakdowns, and offer emergency repair services to minimize downtime.",
+      "Our refrigeration installation services cover the complete setup of commercial cooling systems. We handle everything from system selection and sizing to professional installation and commissioning. Our experienced technicians ensure your refrigeration system operates efficiently and reliably from day one.",
     scope: [
-      "New refrigeration system installation",
-      "Preventive maintenance programs",
-      "Emergency repair services",
-      "System upgrades and retrofits",
-      "Energy efficiency assessments",
-      "Refrigerant handling and recovery",
+      "Commercial refrigeration system selection",
+      "Professional installation services",
+      "System sizing and capacity planning",
+      "Electrical connections and wiring",
+      "Refrigerant charging and leak testing",
+      "System commissioning and testing",
+      "Energy efficiency optimization",
+      "Compliance with safety regulations",
     ],
     products: [
       "Commercial refrigeration units",
-      "Industrial cooling systems",
       "Compressors and condensers",
+      "Evaporators",
       "Control systems",
+      "Display cases",
+      "Reach-in coolers",
+    ],
+    images: [
+      "/commercial-refrigeration-system.jpg",
+      "/modern-grocery-store-refrigeration-display-cases.jpg",
+      "/industrial-refrigeration-equipment.jpg",
+    ],
+  },
+  "airconditioning-systems-services": {
+    icon: Wind,
+    title: "Airconditioning Systems Services",
+    description:
+      "Complete air conditioning services including installation, maintenance, and emergency repairs. Keep your business comfortable year-round with reliable HVAC solutions.",
+    overview:
+      "KORI provides comprehensive air conditioning services for commercial and industrial spaces. Our services include new system installation, regular maintenance programs, system upgrades, and emergency repair services to ensure optimal climate control for your business environment.",
+    scope: [
+      "Commercial HVAC installation",
+      "Air conditioning system design",
+      "Preventive maintenance contracts",
+      "System repairs and troubleshooting",
+      "Energy efficiency assessments",
+      "Air quality improvement",
+      "Ductwork installation and repair",
+      "24/7 emergency service",
+    ],
+    products: [
+      "Commercial AC units",
+      "Rooftop HVAC systems",
+      "Split systems",
+      "VRF systems",
+      "Ductwork",
+      "Thermostats and controls",
+    ],
+    images: ["/commercial-hvac-installation.jpg", "/rooftop-air-conditioning-unit.jpg", "/hvac-maintenance.png"],
+  },
+  "maintenance-repair-troubleshooting": {
+    icon: Wrench,
+    title: "Maintenance, Repair & Troubleshooting",
+    description:
+      "Expert maintenance, repair, and troubleshooting services to keep your refrigeration and cooling systems running at peak performance. Minimize downtime and extend equipment life.",
+    overview:
+      "Our maintenance and repair services are designed to prevent breakdowns, extend equipment life, and minimize operational disruptions. We offer scheduled preventive maintenance programs, emergency repair services, and comprehensive troubleshooting to quickly identify and resolve issues.",
+    scope: [
+      "Preventive maintenance programs",
+      "24/7 emergency repair services",
+      "System diagnostics and troubleshooting",
+      "Component replacement and upgrades",
+      "Performance optimization",
+      "Refrigerant leak detection and repair",
+      "Electrical system repairs",
+      "Regular inspections and testing",
+    ],
+    products: [
+      "Replacement parts and components",
+      "Filters and belts",
+      "Compressor rebuilds",
+      "Motor replacements",
+      "Control boards",
+      "Sensors and thermostats",
+    ],
+    images: ["/refrigeration-maintenance.jpg", "/temperature-control-system.jpg", "/ice-machine-maintenance.jpg"],
+  },
+  "parts-components-supply": {
+    icon: Settings,
+    title: "Parts & Components Supply",
+    description:
+      "High-quality parts and components supply for all your refrigeration, air conditioning, and cooling system needs. Fast delivery and competitive pricing.",
+    overview:
+      "KORI supplies genuine OEM parts and high-quality aftermarket components for all major refrigeration and HVAC brands. Our extensive inventory ensures quick availability of the parts you need to keep your systems running. We offer competitive pricing and fast delivery to minimize downtime.",
+    scope: [
+      "Genuine OEM parts supply",
+      "Quality aftermarket components",
+      "Compressors and condensers",
+      "Evaporators and coils",
+      "Controls and thermostats",
+      "Refrigerants and chemicals",
+      "Filters and accessories",
+      "Fast delivery service",
+    ],
+    products: [
+      "Compressors",
+      "Condensing units",
+      "Evaporator coils",
+      "Expansion valves",
+      "Thermostats",
+      "Pressure switches",
+      "Refrigerants",
+      "Insulation materials",
     ],
     images: [
       "/commercial-refrigeration-system.jpg",
       "/industrial-refrigeration-equipment.jpg",
-      "/refrigeration-maintenance.jpg",
+      "/temperature-control-system.jpg",
     ],
   },
-  "air-conditioning": {
-    icon: Wind,
-    title: "Air Conditioning",
+  "site-preparation-panel-assembly": {
+    icon: Warehouse,
+    title: "Site Preparation & Insulated Panel Assembly",
     description:
-      "Commercial HVAC services including installation, maintenance, and emergency repairs. Keep your business comfortable year-round with reliable climate control.",
+      "Professional site preparation and insulated panel assembly services for optimal cold storage installation. Ensure proper foundation and insulation for maximum efficiency.",
     overview:
-      "We provide comprehensive HVAC solutions for commercial and industrial spaces. Our services ensure optimal indoor climate control, energy efficiency, and air quality for your business environment.",
+      "Proper site preparation and panel assembly are critical for the success of any cold storage installation. KORI provides comprehensive site assessment, preparation, and insulated panel assembly services to ensure your cold storage facility is built to last with optimal thermal performance.",
     scope: [
-      "Commercial HVAC installation",
-      "System design and engineering",
-      "Preventive maintenance contracts",
-      "Energy efficiency optimization",
-      "Air quality improvement",
-      "Emergency repair services",
+      "Site assessment and planning",
+      "Foundation preparation",
+      "Floor leveling and drainage",
+      "Insulated panel assembly",
+      "Panel sealing and finishing",
+      "Vapor barrier installation",
+      "Structural support installation",
+      "Quality assurance inspections",
     ],
-    products: ["Commercial AC units", "Rooftop HVAC systems", "Split systems", "Ductwork and ventilation"],
-    images: ["/commercial-hvac-installation.jpg", "/rooftop-air-conditioning-unit.jpg", "/hvac-maintenance.png"],
-  },
-  "walk-in-coolers": {
-    icon: DoorOpen,
-    title: "Walk-in Coolers",
-    description:
-      "Professional installation and service for walk-in coolers and freezers. Custom-designed solutions for restaurants, grocery stores, and food service businesses.",
-    overview:
-      "Walk-in coolers and freezers are essential for many businesses. We design, install, and maintain walk-in units that provide reliable temperature control and maximize your storage space.",
-    scope: [
-      "Custom walk-in cooler design",
-      "Walk-in freezer installation",
-      "Door and seal replacement",
-      "Insulation upgrades",
-      "Temperature control systems",
-      "Repair and maintenance services",
+    products: [
+      "Insulated wall panels",
+      "Insulated ceiling panels",
+      "Floor insulation",
+      "Panel sealants",
+      "Vapor barriers",
+      "Structural supports",
+      "Door frames",
+      "Installation hardware",
     ],
-    products: ["Walk-in cooler panels", "Freezer doors and hardware", "Refrigeration systems", "Shelving solutions"],
     images: [
-      "/modern-commercial-restaurant-walk-in-cooler-instal.jpg",
+      "/large-industrial-warehouse-cold-storage-facility.jpg",
       "/walk-in-cooler-interior.jpg",
       "/walk-in-freezer-installation.jpg",
-    ],
-  },
-  "ice-machines": {
-    icon: Droplets,
-    title: "Ice Machines",
-    description:
-      "Complete ice machine services from installation to regular maintenance and repairs. Ensure your business always has the ice supply it needs.",
-    overview:
-      "Commercial ice machines require proper installation and regular maintenance to operate reliably. We service all major brands and can help you choose the right ice machine for your business needs.",
-    scope: [
-      "Commercial ice maker installation",
-      "Regular cleaning and maintenance",
-      "Ice machine repair services",
-      "Water filtration system installation",
-      "Part replacement and upgrades",
-      "Capacity assessments",
-    ],
-    products: ["Commercial ice makers", "Ice bins and storage", "Water filtration systems", "Ice dispensers"],
-    images: ["/commercial-ice-machine.jpg", "/ice-maker-installation.jpg", "/ice-machine-maintenance.jpg"],
-  },
-  "display-refrigerators": {
-    icon: Container,
-    title: "Display Refrigerators",
-    description:
-      "Service for reach-in refrigerators, display cases, and merchandising units. Keep your products at the perfect temperature while maximizing visibility.",
-    overview:
-      "Display refrigeration is crucial for retail and food service businesses. We install and maintain display cases, reach-in refrigerators, and merchandising units that keep products at optimal temperatures while attracting customers.",
-    scope: [
-      "Display case installation",
-      "Reach-in refrigerator service",
-      "Glass door replacement",
-      "LED lighting upgrades",
-      "Temperature control optimization",
-      "Merchandising unit maintenance",
-    ],
-    products: ["Glass door refrigerators", "Open-air display cases", "Deli cases", "Beverage coolers"],
-    images: [
-      "/modern-grocery-store-refrigeration-display-cases.jpg",
-      "/retail-refrigerated-display-case.jpg",
-      "/reach-in-refrigerator.jpg",
     ],
   },
 }
