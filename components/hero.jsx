@@ -18,20 +18,23 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      <div className="absolute inset-0 gradient-mesh opacity-30"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/5 via-background to-background"></div>
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-[oklch(0.96_0.02_230)] via-[oklch(0.98_0.015_240)] to-[oklch(0.97_0.018_220)]"
+    >
+      <div className="absolute inset-0 gradient-mesh opacity-20"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/15 via-primary/5 to-transparent"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 text-center">
         <div className="max-w-5xl mx-auto space-y-8 sm:space-y-10">
-          <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-primary/10 border border-primary/20 rounded-full text-xs sm:text-sm font-medium text-primary backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-primary/15 border-2 border-primary/30 rounded-full text-xs sm:text-sm font-semibold text-primary backdrop-blur-sm shadow-lg shadow-primary/10">
             <Snowflake className="h-3 w-3 sm:h-4 sm:w-4 animate-spin-slow" />
             Professional Refrigeration Services
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-[1.1] text-balance px-4">
             Expert Cold Storage &{" "}
-            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient-x">
+            <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient-x drop-shadow-sm">
               Refrigeration Solutions
             </span>
           </h1>
@@ -44,7 +47,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 sm:pt-6 px-4">
             <Button
               size="lg"
-              className="w-full sm:w-auto text-base px-8 sm:px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="w-full sm:w-auto text-base px-8 sm:px-10 py-6 rounded-full shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 hover:scale-105"
               onClick={scrollToContact}
             >
               Get a Free Quote
@@ -53,10 +56,10 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="w-full sm:w-auto text-base px-8 sm:px-10 py-6 rounded-full border-2 hover:bg-primary/5 transition-all duration-300 bg-transparent"
+              className="w-full sm:w-auto text-base px-8 sm:px-10 py-6 rounded-full border-2 hover:bg-primary/10 hover:border-primary transition-all duration-300 bg-transparent"
               asChild
             >
-              <a href="#">
+              <a href="tel:+17607893639">
                 <Phone className="mr-2 h-5 w-5" />
                 (760) 789-3639
               </a>
@@ -66,7 +69,7 @@ export default function Hero() {
       </div>
 
       <div className="hidden sm:block absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary/30 rounded-full flex items-start justify-center p-2">
+        <div className="w-6 h-10 border-2 border-primary/40 rounded-full flex items-start justify-center p-2 shadow-lg shadow-primary/10">
           <div className="w-1.5 h-3 bg-primary rounded-full animate-scroll-down"></div>
         </div>
       </div>

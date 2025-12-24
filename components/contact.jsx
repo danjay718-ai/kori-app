@@ -55,11 +55,11 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-32 bg-background relative overflow-hidden">
+    <section id="contact" className="py-12 sm:py-16 bg-white relative overflow-hidden">
       <div className="absolute inset-0 gradient-mesh opacity-20"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary mb-4">
             Let's Talk
           </div>

@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link
               href="/"
-              className="text-3xl font-bold text-primary tracking-tight hover:text-accent transition-colors"
+              className="text-3xl font-bold text-primary tracking-tight hover:text-accent transition-colors drop-shadow-sm"
             >
               KORI
             </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="px-4 py-2 text-sm font-medium text-foreground/70 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200"
+                  className="px-4 py-2 text-sm font-medium text-foreground/70 hover:text-primary hover:bg-primary/10 rounded-lg transition-all duration-200"
                 >
                   {link.name}
                 </Link>
@@ -61,7 +61,11 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:block">
-            <Button size="default" className="rounded-full shadow-lg hover:shadow-xl transition-shadow" asChild>
+            <Button
+              size="default"
+              className="rounded-full shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all"
+              asChild
+            >
               <Link href={isHomePage ? "#contact" : "/#contact"}>Get Quote</Link>
             </Button>
           </div>

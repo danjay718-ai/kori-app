@@ -22,7 +22,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-20 sm:py-32 bg-gradient-to-b from-background to-secondary/30">
+    <section id="about" className="py-12 sm:py-16 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-20">
           <div className="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary mb-4">
