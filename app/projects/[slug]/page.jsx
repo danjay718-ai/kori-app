@@ -5,7 +5,8 @@ import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { notFound } from "next/navigation"
+import { useParams, useRouter } from "next/navigation"
+import { useEffect } from "react"
 
 const projectsData = {
   "restaurant-chain-refrigeration": {
@@ -220,11 +221,19 @@ const projectsData = {
   },
 }
 
-export default function ProjectDetailPage({ params }) {
+export default function ProjectDetailPage() {
+  const params = useParams()
+  const router = useRouter()
   const project = projectsData[params.slug]
 
+  useEffect(() => {
+    if (!project) {
+      router.push("/projects")
+    }
+  }, [project, router])
+
   if (!project) {
-    notFound()
+    return null
   }
 
   return (

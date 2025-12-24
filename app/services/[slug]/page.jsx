@@ -5,7 +5,8 @@ import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
-import { notFound } from "next/navigation"
+import { useParams, useRouter } from "next/navigation"
+import { useEffect } from "react"
 
 const servicesData = {
   "walk-in-cold-storage": {
@@ -191,11 +192,19 @@ const servicesData = {
   },
 }
 
-export default function ServiceDetailPage({ params }) {
+export default function ServiceDetailPage() {
+  const params = useParams()
+  const router = useRouter()
   const service = servicesData[params.slug]
 
+  useEffect(() => {
+    if (!service) {
+      router.push("/services")
+    }
+  }, [service, router])
+
   if (!service) {
-    notFound()
+    return null
   }
 
   const Icon = service.icon
