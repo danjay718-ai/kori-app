@@ -61,7 +61,7 @@ export default function Hero() {
             >
               <a href="tel:+17607893639">
                 <Phone className="mr-2 h-5 w-5" />
-                (760) 789-3639
+                (63) 928-344-2044
               </a>
             </Button>
           </div>

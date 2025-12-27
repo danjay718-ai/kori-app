@@ -4,15 +4,15 @@ import { CheckCircle2, Award, Clock } from "lucide-react"
 
 export default function About() {
   const features = [
-    {
-      icon: Award,
-      title: "Expert Technicians",
-      description: "Certified professionals with years of experience in commercial refrigeration",
-    },
-    {
+  {
+    icon: Award,
+    title: "Experienced Technicians",
+    description: "Years of hands-on expertise in commercial refrigeration",
+  },
+   {
       icon: Clock,
-      title: "24/7 Emergency Service",
-      description: "Round-the-clock availability for urgent repairs and maintenance",
+      title: "On-Call Emergency Support",
+      description: "Fast response for urgent issues, available by call when you need us",
     },
     {
       icon: CheckCircle2,

@@ -31,25 +31,25 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "korilee760@gmail.com",
-      href: "mailto:korilee760@gmail.com",
+      value: "admin@korisystems.com",
+      href: "mailto:admin@korisystems.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "(760) 789-3639",
-      href: "tel:+17607893639",
+      value: "(63) 928-344-2044",
+      href: "tel:+639283442044",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Serving Southern California",
+      value: "IK2 Bldg. 2nd Floor, Unit E & F, Daang Hari Road, Molino IV, Bacoor City",
       href: null,
     },
     {
       icon: Clock,
       label: "Hours",
-      value: "24/7 Emergency Service",
+      value: "On-Call Emergency Support",
       href: null,
     },
   ]
@@ -116,7 +116,7 @@ export default function Contact() {
                   type="tel"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="(123) 456-7890"
+                  placeholder="(63) XXX - XXX - XXXX"
                   className="h-12 rounded-xl"
                 />
               </div>
@@ -181,13 +181,13 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 sm:p-10 rounded-2xl border border-primary/20">
+            {/* <div className="bg-gradient-to-br from-primary/10 to-accent/10 p-6 sm:p-10 rounded-2xl border border-primary/20">
               <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">About the Owner</h3>
               <p className="text-foreground/80 leading-relaxed text-base sm:text-lg">
                 Kori Lee brings years of expertise in commercial refrigeration and HVAC systems. Committed to providing
                 top-quality service and building lasting relationships with clients across Southern California.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

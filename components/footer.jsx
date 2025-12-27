@@ -1,4 +1,5 @@
 import Link from "next/link"
+import LogoIcon from "@/components/ui/logo-icon";
 
 export default function Footer() {
   const footerLinks = [
@@ -10,15 +11,19 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-primary py-12">
+    <footer className="bg-secondary py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="text-2xl font-bold text-primary-foreground mb-4">KORI</h3>
-            <p className="text-primary-foreground/80 leading-relaxed">
-              Professional refrigeration and cooling solutions for businesses across Southern California.
-            </p>
-          </div>
+        <div>
+          <h3 className="flex items-center text-2xl font-bold text-primary-foreground mb-4 gap-2">
+            <LogoIcon size={32} />
+            KORI
+          </h3>
+          <p className="text-primary-foreground/80 leading-relaxed">
+            Professional refrigeration and cooling solutions for businesses.
+          </p>
+        </div>
+
 
           <div>
             <h4 className="text-lg font-semibold text-primary-foreground mb-4">Quick Links</h4>
@@ -41,15 +46,15 @@ export default function Footer() {
             <ul className="space-y-2 text-primary-foreground/80">
               <li>
                 <a href="tel:+17607893639" className="hover:text-primary-foreground transition-colors">
-                  Phone: (760) 789-3639
+                  Phone: (63) 928-344-2044
                 </a>
               </li>
               <li>
-                <a href="mailto:korilee760@gmail.com" className="hover:text-primary-foreground transition-colors">
-                  Email: korilee760@gmail.com
+                <a href="mailto:admin@korisystems.com" className="hover:text-primary-foreground transition-colors">
+                  Email: admin@korisystems.com
                 </a>
               </li>
-              <li>24/7 Emergency Service</li>
+              <li>On-Call Emergency Support</li>
             </ul>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import LogoIcon from "@/components/ui/logo-icon";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,9 +41,10 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link
               href="/"
-              className="text-3xl font-bold text-primary tracking-tight hover:text-accent transition-colors drop-shadow-sm"
+              className="flex items-center gap-2 text-3xl font-bold text-primary tracking-tight hover:text-accent transition-colors drop-shadow-sm"
             >
-              KORI
+              <LogoIcon size={32} />
+              <span>KORI</span>
             </Link>
           </div>
 
