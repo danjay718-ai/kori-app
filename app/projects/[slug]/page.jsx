@@ -9,33 +9,33 @@ import { useParams, useRouter } from "next/navigation"
 import { useEffect } from "react"
 
 const projectsData = {
-  "recent": {
-    title: "Recent Project",
-    category: "Retail",
-    location: "Not Available",
-    date: "Completed Q3 2025",
+  "commercial-bakery-cold-storage-installation": {
+    title: "Commercial Bakery Cold Storage Installation",
+    category: "Commercial",
+    location: "Parañaque City",
+    date: "Completed December 2025",
     description:
-      "Installed complete cold storage systems for a retail store.",
+      "A customized cold storage system installed for a commercial bakery supplying baked goods to multiple retail and foodservice outlets. The system was designed to maintain consistent temperatures for ingredient storage and product freshness while maximizing storage efficiency for high-volume operations.",
     overview:
-      "This project involved coordinating installations across multiple locations while maintaining operational continuity for busy restaurant kitchens. We designed systems that maximized storage capacity while minimizing energy consumption.",
+      "We designed and installed a custom cold storage system for a commercial bakery to ensure optimal storage of perishable ingredients and finished products. The system was engineered to maintain consistent low temperatures, maximize storage efficiency, and comply with food safety standards.",
     systemType: "Cold Storage Systems",
     challenges: [
-      "Tight installation schedule to minimize business disruption",
-      "Custom sizing for each unique kitchen layout",
-      "Integration with existing electrical systems",
-      "Training staff at each location on proper usage",
+      "Limited floor space in an active bakery environment, requiring careful layout planning.",
+      "Maintaining consistent temperature despite frequent door openings during production cycles.",
+      "Ensuring energy efficiency to reduce operating costs while meeting high storage demands.",
+      "Coordinating installation without interrupting bakery operations.",
     ],
     solutions: [
-      "After-hours installation to avoid disrupting service",
-      "Detailed on-site measurements and custom designs",
-      "Professional electrical upgrades where needed",
-      "Comprehensive training and documentation provided",
+      "Customized cold storage layout and panel design to maximize usable space.",
+      "High-efficiency refrigeration units with rapid recovery temperature control.",
+      "Insulated doors and access protocols to minimize temperature fluctuations.",
+      "Scheduled installation and testing to avoid disruption of bakery production.",
     ],
     results: [
-      "Zero downtime during installation at all locations",
-      "30% reduction in energy costs compared to old systems",
-      "Increased storage capacity by 40%",
-      "100% client satisfaction rating",
+      "Reliable, stable cold storage capable of maintaining product and ingredient freshness.",
+      "Improved operational workflow for storage and retrieval of baked goods.",
+      "Energy-efficient system reducing long-term operating costs.",
+      "Enhanced compliance with food safety standards, giving the bakery confidence in product quality.",
     ],
     images: [
       "/cold-storage-indoors.jpg",

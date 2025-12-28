@@ -7,12 +7,12 @@ import Footer from "@/components/footer"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Recent Project",
+      title: "Commercial Bakery Cold Storage Installation",
       description:
-        "Installed complete cold storage systems for a retail store.",
+             "A customized cold storage system installed for a commercial bakery supplying baked goods to multiple retail and foodservice outlets.",
       image: "/cold-storage-indoors.jpg",
-      category: "Retail",
-      slug: "recent",
+      category: "Commercial",
+      slug: "commercial-bakery-cold-storage-installation",
     },
     {
       title: "Upcoming Installations",
