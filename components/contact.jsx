@@ -147,7 +147,7 @@ export default function Contact() {
           <div className="space-y-6">
             <div className="bg-card p-6 sm:p-10 rounded-2xl border border-border shadow-xl">
               <h3 className="text-2xl font-bold text-card-foreground mb-2">Contact Information</h3>
-              <p className="text-muted-foreground mb-8">Reach out to Kori Lee and the KORI team</p>
+              <p className="text-muted-foreground mb-8">Reach out to KORI team</p>
 
               <div className="space-y-6">
                 {contactInfo.map((item, index) => {
