@@ -56,7 +56,7 @@ export default function ServicesPage() {
     <main className="min-h-screen">
       <Navbar />
 
-      <section className="pt-32 pb-20 bg-gradient-to-b from-secondary/30 to-background">
+      <section className="pt-32 pb-5 bg-gradient-to-b from-secondary/30 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary mb-4">
@@ -72,7 +72,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
+      <section className="py-15 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {services.map((service, index) => {

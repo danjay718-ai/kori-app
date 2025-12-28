@@ -7,55 +7,55 @@ import Footer from "@/components/footer"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Restaurant Chain Refrigeration",
+      title: "Recent Project",
       description:
-        "Installed complete walk-in cooler and freezer systems for 5 locations, including emergency backup systems.",
-      image: "/modern-commercial-restaurant-walk-in-cooler-instal.jpg",
-      category: "Commercial",
-      slug: "restaurant-chain-refrigeration",
-    },
-    {
-      title: "Warehouse Cold Storage",
-      description: "Designed and implemented a 10,000 sq ft cold storage facility with temperature monitoring systems.",
-      image: "/large-industrial-warehouse-cold-storage-facility.jpg",
-      category: "Industrial",
-      slug: "warehouse-cold-storage",
-    },
-    {
-      title: "Grocery Store HVAC",
-      description: "Complete HVAC overhaul including display refrigeration units and store climate control systems.",
-      image: "/modern-grocery-store-refrigeration-display-cases.jpg",
+        "Installed complete cold storage systems for a retail store.",
+      image: "/cold-storage-indoors.jpg",
       category: "Retail",
-      slug: "grocery-store-hvac",
+      slug: "recent",
     },
     {
-      title: "Medical Facility Climate Control",
-      description: "Precision temperature control systems for pharmaceutical storage and medical equipment rooms.",
-      image: "/medical-facility-hvac-system.jpg",
-      category: "Healthcare",
-      slug: "medical-facility-climate-control",
-    },
-    {
-      title: "Hotel Kitchen Refrigeration",
-      description: "Commercial kitchen walk-in coolers, freezers, and display refrigeration for a luxury hotel.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "Hospitality",
-      slug: "hotel-kitchen-refrigeration",
-    },
-    {
-      title: "Brewery Cooling Systems",
-      description: "Custom cooling solutions for fermentation tanks and cold storage for a craft brewery.",
-      image: "/placeholder.svg?height=400&width=600",
+      title: "Upcoming Installations",
+      description: "Commercial airconditioning systems and cold storage projects are currently underway...",
+      image: "/placeholder.svg",
       category: "Industrial",
-      slug: "brewery-cooling-systems",
+      slug: "",
     },
+      {
+      title: "Upcoming Installations",
+      description: "Commercial airconditioning systems and cold storage projects are currently underway...",
+      image: "/placeholder.svg",
+      category: "Commercial",
+      slug: "",
+    },
+    // {
+    //   title: "Medical Facility Climate Control",
+    //   description: "Precision temperature control systems for pharmaceutical storage and medical equipment rooms.",
+    //   image: "/medical-facility-hvac-system.jpg",
+    //   category: "Healthcare",
+    //   slug: "medical-facility-climate-control",
+    // },
+    // {
+    //   title: "Hotel Kitchen Refrigeration",
+    //   description: "Commercial kitchen walk-in coolers, freezers, and display refrigeration for a luxury hotel.",
+    //   image: "/placeholder.svg?height=400&width=600",
+    //   category: "Hospitality",
+    //   slug: "hotel-kitchen-refrigeration",
+    // },
+    // {
+    //   title: "Brewery Cooling Systems",
+    //   description: "Custom cooling solutions for fermentation tanks and cold storage for a craft brewery.",
+    //   image: "/placeholder.svg?height=400&width=600",
+    //   category: "Industrial",
+    //   slug: "brewery-cooling-systems",
+    // },
   ]
 
   return (
     <main className="min-h-screen">
       <Navbar />
 
-      <section className="pt-32 pb-20 bg-gradient-to-b from-secondary/30 to-background">
+      <section className="pt-30 bg-gradient-to-b from-secondary/30 to-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full text-sm font-medium text-primary mb-4">
@@ -71,7 +71,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-background">
+      <section className="pb-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project, index) => (

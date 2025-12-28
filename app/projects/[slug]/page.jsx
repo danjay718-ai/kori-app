@@ -9,16 +9,16 @@ import { useParams, useRouter } from "next/navigation"
 import { useEffect } from "react"
 
 const projectsData = {
-  "restaurant-chain-refrigeration": {
-    title: "Restaurant Chain Refrigeration",
-    category: "Commercial",
-    location: "Multiple locations, Southern California",
-    date: "Completed Q2 2023",
+  "recent": {
+    title: "Recent Project",
+    category: "Retail",
+    location: "Not Available",
+    date: "Completed Q3 2025",
     description:
-      "Complete refrigeration system overhaul for a growing restaurant chain across 5 locations. Each site received custom walk-in coolers, freezers, and emergency backup systems to ensure uninterrupted operation.",
+      "Installed complete cold storage systems for a retail store.",
     overview:
       "This project involved coordinating installations across multiple locations while maintaining operational continuity for busy restaurant kitchens. We designed systems that maximized storage capacity while minimizing energy consumption.",
-    systemType: "Walk-in Coolers & Freezers with Backup Systems",
+    systemType: "Cold Storage Systems",
     challenges: [
       "Tight installation schedule to minimize business disruption",
       "Custom sizing for each unique kitchen layout",
@@ -38,10 +38,10 @@ const projectsData = {
       "100% client satisfaction rating",
     ],
     images: [
-      "/modern-commercial-restaurant-walk-in-cooler-instal.jpg",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "/cold-storage-indoors.jpg",
+      "/cold-storage-indoors-2.jpg?height=400&width=600",
+      "/cold-storage-outdoors.jpg?height=400&width=600",
+      "/ref-installation.jpg?height=400&width=600",
     ],
   },
   "warehouse-cold-storage": {

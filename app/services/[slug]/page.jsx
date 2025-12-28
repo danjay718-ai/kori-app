@@ -34,9 +34,9 @@ const servicesData = {
       "Refrigeration units",
     ],
     images: [
-      "/large-industrial-warehouse-cold-storage-facility.jpg",
-      "/modern-commercial-restaurant-walk-in-cooler-instal.jpg",
-      "/commercial-cold-storage-interior.jpg",
+     "/cold-storage-indoors.jpg",
+      "/cold-storage-indoors-2.jpg",
+      "/cold-storage-outdoors.jpg",
     ],
   },
   "refrigeration-systems-installation": {
@@ -65,9 +65,10 @@ const servicesData = {
       "Reach-in coolers",
     ],
     images: [
-      "/commercial-refrigeration-system.jpg",
-      "/modern-grocery-store-refrigeration-display-cases.jpg",
-      "/industrial-refrigeration-equipment.jpg",
+      "/ref-installation.jpg",
+      "/modern-commercial-restaurant-walk-in-cooler-instal.jpg",
+      "/refrigeration-maintenance.jpg",
+      
     ],
   },
   "airconditioning-systems-services": {
@@ -83,9 +84,9 @@ const servicesData = {
       "Preventive maintenance contracts",
       "System repairs and troubleshooting",
       "Energy efficiency assessments",
-      "Air quality improvement",
+      "Aircon cleaning and quality improvement",
       "Ductwork installation and repair",
-      "24/7 emergency service",
+      "On-call emergency service",
     ],
     products: [
       "Commercial AC units",
@@ -95,7 +96,7 @@ const servicesData = {
       "Ductwork",
       "Thermostats and controls",
     ],
-    images: ["/commercial-hvac-installation.jpg", "/rooftop-air-conditioning-unit.jpg", "/hvac-maintenance.png"],
+    images: ["/aircon-cleaning-service.jpg", "/aircon-cleaning-service-2.png", "/aircon-services-3.jpg"],
   },
   "maintenance-repair-troubleshooting": {
     icon: Wrench,
@@ -106,7 +107,7 @@ const servicesData = {
       "Our maintenance and repair services are designed to prevent breakdowns, extend equipment life, and minimize operational disruptions. We offer scheduled preventive maintenance programs, emergency repair services, and comprehensive troubleshooting to quickly identify and resolve issues.",
     scope: [
       "Preventive maintenance programs",
-      "24/7 emergency repair services",
+      "On-call emergency repair services",
       "System diagnostics and troubleshooting",
       "Component replacement and upgrades",
       "Performance optimization",
@@ -122,7 +123,7 @@ const servicesData = {
       "Control boards",
       "Sensors and thermostats",
     ],
-    images: ["/refrigeration-maintenance.jpg", "/temperature-control-system.jpg", "/ice-machine-maintenance.jpg"],
+    images: ["", "", ""],
   },
   "parts-components-supply": {
     icon: Settings,
@@ -130,7 +131,7 @@ const servicesData = {
     description:
       "High-quality parts and components supply for all your refrigeration, air conditioning, and cooling system needs. Fast delivery and competitive pricing.",
     overview:
-      "KORI supplies genuine OEM parts and high-quality aftermarket components for all major refrigeration and HVAC brands. Our extensive inventory ensures quick availability of the parts you need to keep your systems running. We offer competitive pricing and fast delivery to minimize downtime.",
+      "KORI supplies genuine OEM parts and high-quality aftermarket components for all major refrigeration and HVAC brands. Our parts and components ensures availability of the parts you need to keep your systems running. We offer competitive pricing and fast delivery to minimize downtime.",
     scope: [
       "Genuine OEM parts supply",
       "Quality aftermarket components",
@@ -152,9 +153,9 @@ const servicesData = {
       "Insulation materials",
     ],
     images: [
-      "/commercial-refrigeration-system.jpg",
-      "/industrial-refrigeration-equipment.jpg",
-      "/temperature-control-system.jpg",
+      "",
+      "",
+      "",
     ],
   },
   "site-preparation-panel-assembly": {
@@ -185,9 +186,9 @@ const servicesData = {
       "Installation hardware",
     ],
     images: [
-      "/large-industrial-warehouse-cold-storage-facility.jpg",
-      "/walk-in-cooler-interior.jpg",
-      "/walk-in-freezer-installation.jpg",
+      "",
+      "",
+      "",
     ],
   },
 }
@@ -243,7 +244,7 @@ export default function ServiceDetailPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             <div className="lg:col-span-2 space-y-12">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">Service Overview</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-3">Service Overview</h2>
                 <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">{service.overview}</p>
               </div>
 
