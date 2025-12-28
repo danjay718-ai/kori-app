@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-[oklch(0.96_0.02_230)] via-[oklch(0.98_0.015_240)] to-[oklch(0.97_0.018_220)]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-5 bg-gradient-to-br from-[oklch(0.96_0.02_230)] via-[oklch(0.98_0.015_240)] to-[oklch(0.97_0.018_220)]"
     >
       <div className="absolute inset-0 gradient-mesh opacity-20"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/15 via-primary/5 to-transparent"></div>
