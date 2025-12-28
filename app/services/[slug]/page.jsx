@@ -309,14 +309,14 @@ export default function ServiceDetailPage() {
                   <div className="space-y-2 text-sm">
                     <p className="text-muted-foreground">
                       <span className="font-medium text-foreground">Phone:</span>{" "}
-                      <a href="tel:+17607893639" className="hover:text-primary transition-colors">
-                        (760) 789-3639
+                      <a href="tel:+639283442044" className="hover:text-primary transition-colors">
+                        (63) 928-344-2044
                       </a>
                     </p>
                     <p className="text-muted-foreground">
                       <span className="font-medium text-foreground">Email:</span>{" "}
-                      <a href="mailto:korilee760@gmail.com" className="hover:text-primary transition-colors">
-                        korilee760@gmail.com
+                      <a href="mailto:admin@korisystems.com" className="hover:text-primary transition-colors">
+                        admin@korisystems.com
                       </a>
                     </p>
                   </div>
