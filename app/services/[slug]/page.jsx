@@ -316,7 +316,7 @@ export default function ServiceDetailPage() {
                     <p className="text-muted-foreground">
                       <span className="font-medium text-foreground">Email:</span>{" "}
                       <a href="mailto:admin@korisystems.com" className="hover:text-primary transition-colors">
-                        Email: admin@korisystems.com
+                        admin@korisystems.com
                       </a>
                     </p>
                   </div>
