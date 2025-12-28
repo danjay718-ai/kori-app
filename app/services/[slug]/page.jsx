@@ -300,7 +300,7 @@ export default function ServiceDetailPage() {
                     <Link href="/#contact">Contact Us</Link>
                   </Button>
                 </div>
-
+                {/* sample comment */}
                 <div className="p-6 sm:p-8 bg-card border border-border rounded-2xl">
                   <h3 className="text-lg sm:text-xl font-bold text-foreground mb-4">Need Help?</h3>
                   <p className="text-muted-foreground mb-4 text-sm sm:text-base">
